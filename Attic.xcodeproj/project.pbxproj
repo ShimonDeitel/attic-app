@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21A12CB70A24BDC04B935CE7 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028B71E3117EED940E10B04 /* PaywallView.swift */; };
+		364D9EFBB744C11D676422B6 /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2BE5CC64C01C4CC252BC00 /* CollectionItem.swift */; };
+		444209C5FB89972174A0D737 /* ScanResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54CE98E0DA98B9C6C3FCC2E /* ScanResult.swift */; };
+		5A0D7DBAF5CD8E188950DAC6 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262757BC464571809D7CCF68 /* ItemDetailView.swift */; };
+		7E76362542BDD2547D9947B2 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FC8C22C0C81434A0926B19 /* CameraService.swift */; };
+		8CB200AF0F0ECB8BFF6AD2B1 /* AtticAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA24ADC60A31FD431BC81C0 /* AtticAPI.swift */; };
+		915C85B06A8B10572F8EB95C /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14520B1505F3A548BAEEA0 /* ScanView.swift */; };
+		A50A20F22F3C3D35080FFBE2 /* AtticApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F401E20D86BDB660214A71 /* AtticApp.swift */; };
+		AB4DCD9104A5A04A6EDB650B /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42CC82CC6253530186116D7 /* StoreManager.swift */; };
+		B316CB4A890478D1CA7C93DA /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A6E27C8A4334D38AE8B600 /* InventoryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17FC8C22C0C81434A0926B19 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		262757BC464571809D7CCF68 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		44D82F549B434835CA2FE006 /* Attic.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Attic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C14520B1505F3A548BAEEA0 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		4FA24ADC60A31FD431BC81C0 /* AtticAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtticAPI.swift; sourceTree = "<group>"; };
+		5CB048B76DBA9F9A12C8A296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8028B71E3117EED940E10B04 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		8B2BE5CC64C01C4CC252BC00 /* CollectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItem.swift; sourceTree = "<group>"; };
+		B5A6E27C8A4334D38AE8B600 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		C54CE98E0DA98B9C6C3FCC2E /* ScanResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResult.swift; sourceTree = "<group>"; };
+		D6F401E20D86BDB660214A71 /* AtticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtticApp.swift; sourceTree = "<group>"; };
+		F42CC82CC6253530186116D7 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		"TEMP_0390437F-DE8F-4375-B61C-EA18EA1665D4" /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		034EC59AFA52BCB31C5991CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44D82F549B434835CA2FE006 /* Attic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		112BFBFDEAECDD2138B9E484 /* Attic */ = {
+			isa = PBXGroup;
+			children = (
+				D6F401E20D86BDB660214A71 /* AtticApp.swift */,
+				5CB048B76DBA9F9A12C8A296 /* Info.plist */,
+				C35927C7099FCC5E03876D4A /* Models */,
+				D1C37ED686BBF092A8440848 /* Services */,
+				1647221804DA5EB497FDCFE6 /* Views */,
+			);
+			path = Attic;
+			sourceTree = "<group>";
+		};
+		1647221804DA5EB497FDCFE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5A6E27C8A4334D38AE8B600 /* InventoryView.swift */,
+				262757BC464571809D7CCF68 /* ItemDetailView.swift */,
+				8028B71E3117EED940E10B04 /* PaywallView.swift */,
+				4C14520B1505F3A548BAEEA0 /* ScanView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C35927C7099FCC5E03876D4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B2BE5CC64C01C4CC252BC00 /* CollectionItem.swift */,
+				C54CE98E0DA98B9C6C3FCC2E /* ScanResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C7E549D1A86726CD32DF5E6A = {
+			isa = PBXGroup;
+			children = (
+				112BFBFDEAECDD2138B9E484 /* Attic */,
+				034EC59AFA52BCB31C5991CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1C37ED686BBF092A8440848 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4FA24ADC60A31FD431BC81C0 /* AtticAPI.swift */,
+				17FC8C22C0C81434A0926B19 /* CameraService.swift */,
+				F42CC82CC6253530186116D7 /* StoreManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		"TEMP_EEA507B9-8922-4295-B683-C03D531A2C53" /* Attic */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_0390437F-DE8F-4375-B61C-EA18EA1665D4" /* Secrets.xcconfig */,
+			);
+			path = Attic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		612EDD12D74867D1582A3C8B /* Attic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 878CC1B1EB9A775494CAF240 /* Build configuration list for PBXNativeTarget "Attic" */;
+			buildPhases = (
+				3484B77B7FE68390C3E9F385 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Attic;
+			packageProductDependencies = (
+			);
+			productName = Attic;
+			productReference = 44D82F549B434835CA2FE006 /* Attic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BC53EE9ABDD94DAC0709C1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					612EDD12D74867D1582A3C8B = {
+						DevelopmentTeam = W7Q885Q59C;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 53E5DF140F4EDFCE04B22AD7 /* Build configuration list for PBXProject "Attic" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C7E549D1A86726CD32DF5E6A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 034EC59AFA52BCB31C5991CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				612EDD12D74867D1582A3C8B /* Attic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3484B77B7FE68390C3E9F385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB200AF0F0ECB8BFF6AD2B1 /* AtticAPI.swift in Sources */,
+				A50A20F22F3C3D35080FFBE2 /* AtticApp.swift in Sources */,
+				7E76362542BDD2547D9947B2 /* CameraService.swift in Sources */,
+				364D9EFBB744C11D676422B6 /* CollectionItem.swift in Sources */,
+				B316CB4A890478D1CA7C93DA /* InventoryView.swift in Sources */,
+				5A0D7DBAF5CD8E188950DAC6 /* ItemDetailView.swift in Sources */,
+				21A12CB70A24BDC04B935CE7 /* PaywallView.swift in Sources */,
+				444209C5FB89972174A0D737 /* ScanResult.swift in Sources */,
+				915C85B06A8B10572F8EB95C /* ScanView.swift in Sources */,
+				AB4DCD9104A5A04A6EDB650B /* StoreManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1B6398368F2909F52D6ABCA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGNING_ALLOWED[sdk=iphonesimulator*]" = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W7Q885Q59C;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1CC5F667F162343CF910EF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGNING_ALLOWED[sdk=iphonesimulator*]" = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W7Q885Q59C;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3E47AF9E5E779D62EC441BEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = "TEMP_0390437F-DE8F-4375-B61C-EA18EA1665D4" /* Secrets.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Attic/Info.plist;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Attic uses the camera to photograph your antiques and collectibles so they can be identified and valued. Photos are only sent for analysis when you tap Scan.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Attic can identify an item from a photo already in your library, for example a picture taken at an estate sale.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deitel.attic;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FE1B837BD8BAFDC0E22F725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = "TEMP_0390437F-DE8F-4375-B61C-EA18EA1665D4" /* Secrets.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Attic/Info.plist;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Attic uses the camera to photograph your antiques and collectibles so they can be identified and valued. Photos are only sent for analysis when you tap Scan.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Attic can identify an item from a photo already in your library, for example a picture taken at an estate sale.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deitel.attic;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53E5DF140F4EDFCE04B22AD7 /* Build configuration list for PBXProject "Attic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6398368F2909F52D6ABCA0 /* Debug */,
+				1CC5F667F162343CF910EF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		878CC1B1EB9A775494CAF240 /* Build configuration list for PBXNativeTarget "Attic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E47AF9E5E779D62EC441BEE /* Debug */,
+				4FE1B837BD8BAFDC0E22F725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BC53EE9ABDD94DAC0709C1B /* Project object */;
+}
