@@ -23,9 +23,10 @@ struct AtticAPIConfiguration {
     /// proxy with a funded key before submission.
     static let defaultModel = "google/gemini-2.5-flash"
     #if DEBUG
-    /// Free-tier vision model so simulator dev works on an uncredited
-    /// OpenRouter key. Rate-limited upstream; expect flakiness.
-    static let debugFreeModel = "google/gemma-4-31b-it:free"
+    /// Free-tier vision model so dev works on an uncredited OpenRouter key.
+    /// Verified end-to-end 2026-07-06 (schema-correct JSON). Rate-limited;
+    /// production still moves to a funded key behind the proxy.
+    static let debugFreeModel = "nvidia/nemotron-nano-12b-v2-vl:free"
     #endif
 
     static func load(bundle: Bundle = .main) -> AtticAPIConfiguration? {
