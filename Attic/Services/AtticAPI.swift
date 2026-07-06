@@ -19,12 +19,24 @@ struct AtticAPIConfiguration {
     var apiKey: String
 
     static let defaultEndpoint = "https://openrouter.ai/api/v1/chat/completions"
-    static let defaultModel = "google/gemini-2.5-flash-image"
+    /// Production model (multimodal input, text out). Served via the thin
+    /// proxy with a funded key before submission.
+    static let defaultModel = "google/gemini-2.5-flash"
+    #if DEBUG
+    /// Free-tier vision model so simulator dev works on an uncredited
+    /// OpenRouter key. Rate-limited upstream; expect flakiness.
+    static let debugFreeModel = "google/gemma-4-31b-it:free"
+    #endif
 
     static func load(bundle: Bundle = .main) -> AtticAPIConfiguration? {
         let info = bundle.infoDictionary ?? [:]
         let endpointString = nonEmpty(info["ATTIC_API_ENDPOINT"] as? String) ?? defaultEndpoint
-        let model = nonEmpty(info["ATTIC_MODEL"] as? String) ?? defaultModel
+        var model = nonEmpty(info["ATTIC_MODEL"] as? String) ?? defaultModel
+        #if DEBUG
+        if nonEmpty(info["ATTIC_MODEL"] as? String) == nil {
+            model = debugFreeModel
+        }
+        #endif
         var apiKey = nonEmpty(info["ATTIC_API_KEY"] as? String) ?? ""
 
         #if DEBUG
