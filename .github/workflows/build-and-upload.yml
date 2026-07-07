@@ -18,7 +18,7 @@ jobs:
           echo "Selecting $LATEST"
           sudo xcode-select -s "$LATEST"
           xcodebuild -version
-          xcodebuild -showsdks | grep ios
+          xcodebuild -showsdks | grep -i ios || true
 
       - name: Install XcodeGen
         run: brew install xcodegen
